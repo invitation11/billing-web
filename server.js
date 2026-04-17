@@ -107,3 +107,5 @@ app.get("/dashboard", async (req,res)=>{
 });
 
 app.listen(3001, ()=>console.log("🚀 Firebase Server Running"));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log("Server running"));
